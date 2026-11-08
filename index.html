@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Choco Amore | Chocotejas Artesanales</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Choco Amore</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <!-- BOTON DEL CARRITO -->
+    <button id="abrirCarrito" class="boton-carrito">
+         Mi carrito
+        (<span id="contadorCarrito">0</span>)
+    </button>
+
+</header>
+
+    <!-- PORTADA -->
+    <section id="inicio" class="portada">
+        <h2>El amor tiene sabor a chocolate</h2>
+
+        <p>
+            Descubre nuestras deliciosas
+            chocotejas artesanales.
+        </p>
+
+        <a href="#productos" class="boton">
+            Ver productos
+        </a>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros">
+        <h2>Nuestra historia</h2>
+
+        <p>
+            En Choco Amore elaboramos chocotejas
+            artesanales con dedicación, creatividad
+            y mucho amor.
+        </p>
+    </section>
+
+    <!-- PRODUCTOS -->
+    
+<section id="productos" class="productos">
+
+    <h2>Nuestras Chocotejas</h2>
+
+    <p class="descripcion">
+        Descubre nuestros deliciosos sabores
+        elaborados artesanalmente.
+    </p>
+
+    <div id="catalogo" class="contenedor-productos">
+
+        <!-- Los productos se cargarán con JavaScript -->
+
+    </div>
+
+</section>
+
+<!-- CARRITO DE COMPRAS -->
+
+<section id="carrito" class="carrito">
+
+    <h2>Mi carrito de compras</h2>
+
+    <div id="listaCarrito">
+
+        <!-- Los productos seleccionados
+             aparecerán aquí -->
+
+    </div>
+
+    <div class="resumen-carrito">
+    <h3>Resumen de compra</h3>
+
+    <p>
+        Cantidad de productos:
+        <span id="cantidadTotal">0</span>
+    </p>
+
+    <h3>
+        Total: S/ <span id="totalCarrito">0.00</span>
+    </h3>
+
+    <button id="vaciarCarrito">
+        Vaciar carrito
+    </button>
+
+    <button id="finalizarPedido">
+        Finalizar pedido por WhatsApp
+    </button>
+</div>
+
+</section>
+
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+
+        <p>Realiza tus pedidos por WhatsApp.</p>
+
+        <a href="#" class="boton">
+            Pedir ahora
+        </a>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <p>© 2026 Choco Amore</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

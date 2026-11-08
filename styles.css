@@ -1,0 +1,336 @@
+
+/* CONFIGURACION GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4EBDD;
+    color: #40251F;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #40251F;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-size: 15px;
+}
+
+/* PORTADA */
+
+.portada {
+    background-color: #E8D5BE;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.portada h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.portada p {
+    font-size: 18px;
+}
+
+/* SECCIONES */
+
+section {
+    padding: 65px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    background-color: #80543C;
+    color: white;
+    padding: 14px 25px;
+    margin-top: 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #40251F;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #40251F;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .portada h2 {
+        font-size: 27px;
+    }
+
+    .portada {
+        padding: 70px 15px;
+    }
+}
+
+/* CATALOGO DE PRODUCTOS */
+
+.productos {
+    background-color: #F4EBDD;
+}
+
+.descripcion {
+    margin-bottom: 35px;
+}
+
+.contenedor-productos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1100px;
+    margin: auto;
+}
+
+.producto {
+    background-color: white;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px
+        rgba(64, 37, 31, 0.12);
+
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.producto h3 {
+    margin: 15px 0 8px;
+}
+
+.producto p {
+    margin-bottom: 12px;
+}
+
+.producto strong {
+    display: block;
+
+    color: #80543C;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+.producto button {
+    background-color: #40251F;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    width: 100%;
+}
+
+.producto button:hover {
+    background-color: #80543C;
+}
+
+/* ==================================
+   CARRITO DE COMPRAS
+================================== */
+
+.carrito {
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.carrito h2 {
+    color: #40251F;
+    margin-bottom: 30px;
+}
+
+/* PRODUCTOS SELECCIONADOS */
+
+.producto-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #F4EBDD;
+    border-radius: 10px;
+}
+
+.producto-carrito h3 {
+    color: #40251F;
+    margin-bottom: 10px;
+}
+
+.producto-carrito p {
+    margin: 5px 0;
+    color: #80543C;
+}
+
+/* CONTROLES DE CANTIDAD */
+
+.controles-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.controles-cantidad button {
+    background-color: #80543C;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.controles-cantidad button:hover {
+    background-color: #40251F;
+}
+
+.controles-cantidad span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* RESUMEN DE COMPRA */
+
+.resumen-carrito {
+    background-color: #F4EBDD;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+    text-align: right;
+}
+
+.resumen-carrito h3 {
+    color: #40251F;
+    margin: 15px 0;
+}
+
+#vaciarCarrito {
+    background-color: #80543C;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* BOTON SUPERIOR DEL CARRITO */
+
+.boton-carrito {
+    background-color: #D6B98C;
+    color: #40251F;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 600px) {
+
+    .producto-carrito {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .controles-cantidad {
+        width: 100%;
+    }
+
+    .resumen-carrito {
+        text-align: center;
+    }
+
+}
+/* BOTÓN FINALIZAR PEDIDO POR WHATSAPP */
+#finalizarPedido {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+#finalizarPedido:hover {
+    background-color: #128C7E;
+}
+
+#vaciarCarrito {
+    margin: 10px 0;
+}
