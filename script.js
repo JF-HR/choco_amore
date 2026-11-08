@@ -350,6 +350,18 @@ function finalizarPedido() {
 // 12.2 ACTIVAR EL BOTÓN FINALIZAR PEDIDO
 document.getElementById("finalizarPedido")
     .addEventListener("click", finalizarPedido);
+    // BOTÓN DE CONTACTO: SOLICITAR CATÁLOGO POR WHATSAPP
+
+const botonCatalogo = document.getElementById(
+    "botonCatalogoWhatsApp"
+);
+
+const mensajeCatalogo =
+    "¡Hola! Estoy interesado(a) en los productos de Choco Amore. ¿Podrían enviarme su catálogo completo y precios? Muchas gracias.";
+
+botonCatalogo.href =
+    "https://wa.me/" + telefonoWhatsApp +
+    "?text=" + encodeURIComponent(mensajeCatalogo);
 // 13. INICIAR LA TIENDA
 
 mostrarProductos();
